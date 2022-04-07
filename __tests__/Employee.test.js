@@ -1,10 +1,10 @@
 const Employee = require('../lib/Employee');
 test("Creates a Employee object", () => {
-    const employee = new Employee("Vicente","1","vicen1@hotmail.com","Manager");
+    const employee = new Employee("Vicente","1","vicen1@hotmail.com","Employee");
     expect(employee.name).toBe("Vicente");
     expect(employee.id).toBe("1");
     expect(employee.email).toBe("vicen1@hotmail.com");
-    expect(employee.role).toBe("Manager");
+    expect(employee.role).toBe("Employee");
 });
 test("Gets employee's name value", () => {
     const employee = new Employee("Vicente");
@@ -19,6 +19,6 @@ test("Gets employee's email value", () => {
     expect(employee.getEmail()).toEqual(expect.stringContaining(employee.email.toString()));
 });
 test("Gets employee's role value", () =>{
-    const employee = new Employee("Vicente","1","vicen1@hotmail.com","1");
+    const employee = new Employee("Vicente","1","vicen1@hotmail.com","Employee");
     expect(employee.getRole()).toEqual(expect.stringContaining(employee.role.toString()));
 });
