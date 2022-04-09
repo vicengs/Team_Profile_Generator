@@ -7,5 +7,5 @@
 /* --------------------------------- */
 // Add Team library to use
 const Team = require('./lib/Team');
-// Create new object (call to initialize a Team profile page) Team
+// Create new Team object (call to initialize a Team profile page)
 new Team().initializeTeam();
