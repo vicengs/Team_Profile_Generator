@@ -1,3 +1,10 @@
+/* --------------------------------- */
+/* Project  : Team Profile Generator */
+/* File     : Manager.test.js        */
+/* Author   : Vicente Garcia         */
+/* Date     : 04/07/2022             */
+/* Modified : 04/09/2022             */
+/* --------------------------------- */
 const Manager = require('../lib/Manager');
 test("Creates a Manager object", () => {
     const manager = new Manager("Vicente","1","vicen1@hotmail.com","005");

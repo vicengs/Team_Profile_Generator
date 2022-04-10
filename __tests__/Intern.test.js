@@ -1,3 +1,10 @@
+/* --------------------------------- */
+/* Project  : Team Profile Generator */
+/* File     : Intern.test.js         */
+/* Author   : Vicente Garcia         */
+/* Date     : 04/07/2022             */
+/* Modified : 04/09/2022             */
+/* --------------------------------- */
 const Intern = require('../lib/Intern');
 test("Creates a Intern object", () => {
     const intern = new Intern("Vicente","1","vicen1@hotmail.com","University of Texas");

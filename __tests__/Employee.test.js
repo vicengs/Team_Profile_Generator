@@ -1,3 +1,10 @@
+/* --------------------------------- */
+/* Project  : Team Profile Generator */
+/* File     : Employee.test.js       */
+/* Author   : Vicente Garcia         */
+/* Date     : 04/07/2022             */
+/* Modified : 04/09/2022             */
+/* --------------------------------- */
 const Employee = require('../lib/Employee');
 test("Creates a Employee object", () => {
     const employee = new Employee("Vicente","1","vicen1@hotmail.com");
