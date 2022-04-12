@@ -51,7 +51,7 @@ Made by Vicente Garcia Sepulveda
 
 #### Github repository
 
-- https://github.com/vicengs/Team_Profile_generator
+- https://github.com/vicengs/Team_Profile_Generator
 
 ### Walkthrough Video
 
@@ -59,7 +59,7 @@ Made by Vicente Garcia Sepulveda
 
 #### SSH to clone:
 
-    git@github.com:vicengs/Team_Profile_generator.git
+    git@github.com:vicengs/Team_Profile_Generator.git
   
 #### E-mail
   
