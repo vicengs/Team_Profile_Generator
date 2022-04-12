@@ -55,7 +55,7 @@ Made by Vicente Garcia Sepulveda
 
 ### Walkthrough Video
 
-- https://drive.google.com/file/d/1BewjvxDAs7avSmsoZFmViNbmnB14NNDb/view
+- https://drive.google.com/file/d/19JpnB2jI6H3TtBQjIWlPvp8TUCtaOA4o/view
 
 #### SSH to clone:
 

@@ -1,0 +1,27 @@
+/* --------------------------------- */
+/* Project  : Team Profile Generator */
+/* File     : style.css              */
+/* Author   : Vicente Garcia         */
+/* Date     : 04/10/2022             */
+/* Modified : 04/11/2022             */
+/* --------------------------------- */
+/* Background color to title */
+.title{
+  background: linear-gradient(to bottom, rgb(26, 65, 137), rgb(107, 179, 219));
+}
+/* Background color to manager card */
+.manager{
+  background: linear-gradient(to left, rgb(0, 140, 255), rgb(9, 43, 105));
+}
+/* Background color to engineer cards */
+.engineer{
+  background: linear-gradient(to left, rgb(32, 146, 19), rgb(3, 81, 17));
+}
+/* Background color to intern cards */
+.intern{
+    background: linear-gradient(to left, rgb(230, 136, 36), rgb(245, 95, 2));
+}
+/* Background color to footer */
+.foot{
+    background: linear-gradient(to right, rgb(107, 179, 219), rgb(26, 65, 137));
+}
