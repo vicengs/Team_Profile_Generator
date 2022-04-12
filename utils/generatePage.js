@@ -5,26 +5,35 @@
 /* Date     : 04/09/2022             */
 /* Modified : 04/10/2022             */
 /* --------------------------------- */
+// Add access to fs functions & methods to manage (create) files
 const fs = require('fs');
+// Function to generate HTML file
 const writeFile = fileContent => {
+    // Call fs function called writeFile to: 
+    // Create index.md file (path and name first argument)
+    // With the data (in second argument)
+    // And lastly an error control function
     return fs.writeFile('./dist/index.html', fileContent, errorWrite => {
-        // If there's an error, reject the Promise and send the error to the Promise's `.catch()` method
+        // If there is an error, show the error and return
         if (errorWrite) {
             console.log(errorWrite);
-            // Return out of the function here to make sure the Promise doesn't accidentally execute the resolve() function as well
             return;
         }
     });
 };
+// Function to copy CSS file
 const copyFile = () => {
+    // Call fs function called copyFile to: 
+    // Copy style.css file from (path and name first argument)
+    // To (path and name in second argument)
+    // And lastly an error control function
     return fs.copyFile('./src/style.css', './dist/style.css', errorCopy => {
-        // If there's an error, reject the Promise and send the error to the Promise's `.catch()` method
+        // If there is an error, show the error and return
         if (errorCopy) {
-            // Return out of the function here to make sure the Promise doesn't accidentally execute the resolve() function as well
             console.log(errorCopy);
             return;
         }
-        // If everything went well, resolve the Promise and send the successful data to the `.then()` method
+        // If everything went well, return message
         console.log(`
   =====================================
   Team Profile Page index.html created!
@@ -35,4 +44,5 @@ const copyFile = () => {
         );
     });
 };
+// Export functions write and file to invoke out
 module.exports = { writeFile, copyFile };

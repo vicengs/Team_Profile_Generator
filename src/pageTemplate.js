@@ -1,11 +1,13 @@
 /* --------------------------------- */
 /* Project  : Team Profile Generator */
-/* File     : pageTemplate.js         */
+/* File     : pageTemplate.js        */
 /* Author   : Vicente Garcia         */
 /* Date     : 04/09/2022             */
 /* Modified : 04/11/2022             */
 /* --------------------------------- */
+// Add moment module to use
 let moment = require("moment");
+// Function to get engineers block
 const getEngineers = (engineer) => {
     if (!engineer[0]){
       return "";
@@ -29,6 +31,7 @@ const getEngineers = (engineer) => {
     .join("")}
     </div>`
 };
+// Function to get interns block
 const getInterns = (intern) => {
   if (!intern[0]){
     return "";
@@ -52,6 +55,7 @@ const getInterns = (intern) => {
   .join("")}
   </div>`
 };
+// Principal function to generate HTML
 module.exports = (manager, engineers, interns) => {
     return `<!DOCTYPE html>
 <html lang="en"> 
